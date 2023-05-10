@@ -17,8 +17,8 @@ import lombok.ToString;
 @Builder			// 수정자(Setter)를 사용하지 않는 Builder(+Getter)패턴
 @AllArgsConstructor	// 모든 필드 값을 파라미터로 받는 생성자
 @NoArgsConstructor	// 파라미터가 없는 기본 생성자
-@Table(name="USER")	// 테이블명
-@Entity
+@Table(name="user")	// 테이블명
+@Entity(name="user")
 public class UserEntity {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

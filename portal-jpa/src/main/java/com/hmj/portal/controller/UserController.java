@@ -40,9 +40,8 @@ public class UserController {
         @ApiResponse(responseCode = "500", description = "INTERNAL SERVER ERROR")
 	})
 	@GetMapping("member")
-    public List<UserEntity> findAllUser(Model model) {
-		List<UserEntity> userList = userRepository.findAll();
-		return userList;
+    public List<UserEntity> getMemberList() {
+		return userRepository.findAll();
     }
 	
 }
